@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+
+<head>
+
+  <link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="images/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="images/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+
+  <!-- Bootstrap-Style-link -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Coustome-Style-link -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Responsive-Style-link -->
+  <link rel="stylesheet" href="css/responsive.css">
+  <!-- Dashboard-Style-link -->
+  <link rel="stylesheet" href="css/dashboard.css">
+  <!-- Responsive-Style-link -->
+  <link rel="stylesheet" href="css/carusel.css">
+
+  <!-- Language Select -->
+  <link rel="stylesheet" href="css.php">
+
+  <!-- Font-Face-Import-link -->
+  <link rel="stylesheet" href="css/montserrat-font.css">
+
+  <!-- Dashboard payout progress bar mobile version -->
+
+
+
+  <title>O nama - MOBIHUB Lite</title>
+
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      function getCid(name) {
+        const value = `; ${document.cookie}`;
+        const parts = value.split(`; ${name}=`);
+        if (parts.length === 2) {
+          const fullCookieValue = parts.pop().split(';').shift();
+          const cidValue = fullCookieValue.split('.')[2] + '.' + fullCookieValue.split('.')[3];
+          return cidValue;
+        }
+        return null;
+      }
+      const cid = getCid('_ga');
+      // Получаем все кнопки с атрибутом onclick
+      var buttons = document.querySelectorAll('[onclick^="return gtag_report_conversion"]');
+      // Перебираем каждую кнопку
+      buttons.forEach(function(button) {
+        // Получаем текущее значение атрибута onclick
+        var currentOnClick = button.getAttribute('onclick');
+        // Извлекаем параметры из текущей ссылки
+        var urlParams = new URLSearchParams(window.location.search);
+        var keywordParam = urlParams.get('utm_term');
+        var gclidParam = urlParams.get('gclid');
+        // Формируем новую ссылку с параметрами
+        var newOnClick = "return gtag_report_conversion('https://relator-embitter.click/kSc7ppnb?" + "utm_term=" + keywordParam + "&gclid=" + gclidParam + "&cid=" + cid + "')";
+        // Заменяем текущее значение атрибута onclick новым
+        button.setAttribute('onclick', newOnClick);
+      });
+    });
+  </script>
+
+</head>
+
+<body>
+
+  <!-- Page-wrapper-Start -->
+  <div class="page_wrapper body_color">
+
+    <!-- BredCrumb-Section -->
+    <div class="bred_crumb">
+      <!-- Header Start -->
+      <header class="white_header">
+        <!-- container start -->
+        <div class="container logged-out-navbar">
+          <!-- navigation bar -->
+          <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="/ru/home/" aria-label="home page">
+              <img src="./images/MOBIHUB_lite.png" alt="image">
+            </a>
+
+            <div class="mobrog-2-nav-second-container">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+            <!-- <i class="icofont-navigation-menu ico_menu"></i> -->
+            <div class="toggle-wrap">
+              <span class="toggle-bar"></span>
+            </div>
+            </span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item start-page ">
+                  <a class="nav-link" href="index.html">Dom</a>
+                </li>
+                <li class="nav-item about-us-page active-page">
+                  <a class="nav-link" data-tracking-key="about_us_top_nav">O nama</a>
+                </li>
+
+                <li class="nav-item how-does-it-work-page ">
+                  <a class="nav-link" href="index3.html" data-tracking-key="how_does_it_work_top_nav">Kako ovo radi?</a>
+                </li>
+
+             
+
+              </ul>
+            </div>
+
+            <!-- Logged-in user icon / Sign-up button -->
+
+            <div class="nav-item login-page">
+              <button onclick="return gtag_report_conversion('https://relator-embitter.click/kSc7ppnb')" class="nav-link dark_btn" style="border: 1px solid #483B04;" data-tracking-key="login_top_nav">POČETI </button>
+            </div>
+
+        </div>
+        </nav>
+        <!-- navigation end -->
+    </div>
+    <!-- container end -->
+    </header>
+  </div>
+
+  <main class="mobrog-body ">
+
+    <div id="adt2container">
+      <div mobrog-el-type="adt2" id="portalpage" max-height="280"></div>
+    </div>
+
+ 
+
+    <section class="row_am about_app_section">
+      <!-- container start -->
+      <div class="container">
+        <!-- row start -->
+        <div class="row">
+          <div class="col-lg-6">
+
+            <!-- about images -->
+            <div class="about_img" data-aos="fade-in" data-aos-duration="1500">
+              <img src="images/about-us-welcom-img.webp" alt="Welcome to MOBROG" width="600px">
+            </div>
+          </div>
+          <div class="col-lg-6">
+
+            <!-- about text -->
+            <div class="about_text">
+              <div class="section_title" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
+
+                <!-- h2 -->
+                <h2>Dobro došli u MOBIHUB Lite.</h2>
+                <div style="background-color:#FFD626; height: 13px; width: 226px; border-radius: 20px; margin-bottom: 20px;"></div>
+
+                <!-- p -->
+                <p>
+                  MOBIHUB Lite - Mi smo neovisna agencija koja se bavi istraživanjem tržišta. Provodimo ankete putem interneta i naše aplikacije za pametne telefone diljem svijeta. Naš online panel integriran je u svjetsku mrežu, tako da možemo provoditi i visokokvalitetna istraživanja sa širokim rasponom ispitanika.
+
+                </p>
+                <p>
+                  Sudionici ankete dobivaju odgovarajuću naknadu kao zahvalu i priznanje za utrošeno vrijeme.
+                </p>
+                <p>
+                  Budući da imamo mogućnost dosljedno pružati visoku kvalitetu, pridržavamo se Međunarodnog kodeksa marketinga i društvenih istraživanja Međunarodne trgovačke komore i Europskog istraživačkog društva i pridržavamo se smjernica MRS-a, CASRO-a i MRA-a kada pružamo naše usluge i ARF u vezi s međunarodnim istraživanje tržišta.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- row end -->
+
+      </div>
+      <!-- container end -->
+    </section>
+    <!-- Welcome to MOBROG end -->
+
+    <!--Experts Team Section Start  -->
+    <section class="row_am experts_team_section">
+      <div class="container">
+        <div class="section_title" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
+
+          <!-- h2 -->
+          <h2 style="text-align: center;"> Društvena odgovornost</h2>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
+            <div class="experts_box">
+              <img src="images/protection-img.webp" alt="Protection">
+              <div class="text">
+                <h3>Zaštita</h3>
+                <span>Vaši će odgovori biti anonimizirani tijekom procesa ocjenjivanja, korištenjem enkripcije podataka i drugih sigurnosnih protokola, vaša je privatnost uvijek zaštićena.
+                  </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+            <div class="experts_box">
+              <img src="images/community-img.webp" alt="Community">
+              <div class="text">
+                <h3>Zajednica</h3>
+                <span>Sudjelovanje u našim anketama omogućuje vam da podijelite svoja mišljenja sa svijetom, poboljšate proizvode i usluge i, naravno, zaradite.
+                  </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+            <div class="experts_box">
+              <img src="images/innovation-img.webp" alt="Innovation">
+              <div class="text">
+                <h3>Inovacija</h3>
+                <span>Tvrtke i akademske istraživače zanimaju vaša stajališta o razvoju novih proizvoda i poboljšanju postojećih proizvoda i usluga.
+                  </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
+            <div class="experts_box">
+              <img src="images/quality-img.webp" alt="Quality">
+              <div class="text">
+                <h3>Kvaliteta</h3>
+                <span>Budući da imamo mogućnost dosljedno pružati visoku kvalitetu, pridržavamo se Međunarodnog kodeksa marketinga i društvenih istraživanja Međunarodne trgovačke komore i Europskog istraživačkog društva i pridržavamo se smjernica MRS-a, CASRO-a i MRA-a kada pružamo naše usluge i ARF u vezi s međunarodnim istraživanje tržišta.
+                  </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+  </main>
+
+  <!-- Page-wrapper-End -->
+  </div>
+
+  
+
+  <!-- Footer-Section start -->
+  <section class="row_am reg_now" id="blog">
+    <!-- container start -->
+    <div class="container">
+      <center>
+        <h2>      Zaradite jednostavno i pasivno</h2>
+        <p>Gledajte kratke videe i dobro zaradite.</p>
+        <button onclick="return gtag_report_conversion('https://relator-embitter.click/kSc7ppnb')" style="border: 1px solid #483B04;" class="btn puprple_btn register-button-bottom" data-aos="fade-in" data-tracking-key="register_bottom" data-aos-duration="1500">POČNI ODMAH</button>
+      </center>
+    </div>
+    <!-- container end -->
+  </section>
+  <div style="width: 100%; text-align: center; background-color: black; color: white;">
+    <a style="color: white;" href="policy.html">Politika privatnosti</a> |  <a style="color: white;" href="disclaimer.html">Odricanje</a>
+   </div>
+  <!-- Footer-Section end -->
+
+  
+
+
+  
+
+  <!-- bootstrap-js-Link -->
+  <script src="js/navigation.js"></script>
+  <!-- bootstrap-js-Link -->
+  <script src="js/bootstrap.min.js"></script>
+  <!-- main-js-Link -->
+  <script src="js/main.js"></script>
+
+  <!-- survey-cooldown-js-Link -->
+  <script src="js/survey-cooldown.js"></script>
+
+</body>
+
+</html>

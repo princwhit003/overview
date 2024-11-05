@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16756400228"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-16756400228');
+</script>
+<!-- Event snippet for Pix conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-16756400228/l_EnCN2GzuUZEOTAibY-',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+  <link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="images/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="images/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="manifest" href="https://internal.mobrog.com/assets/images/Mobrog_Favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#fff;">
+  <meta name="theme-color" content="#fff;">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Bootstrap-Style-link -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Coustome-Style-link -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Responsive-Style-link -->
+  <link rel="stylesheet" href="css/responsive.css">
+  <!-- Dashboard-Style-link -->
+  <link rel="stylesheet" href="css/dashboard.css">
+  <!-- Responsive-Style-link -->
+  <link rel="stylesheet" href="css/carusel.css">
+
+  <!-- Language Select -->
+  <link rel="stylesheet" href="css.php">
+
+  <!-- Font-Face-Import-link -->
+  <link rel="stylesheet" href="css/montserrat-font.css">
+
+  <!-- Dashboard payout progress bar mobile version -->
+
+  <title>MOBIHUB Lite</title>
+
+  <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      function getCid(name) {
+        const value = `; ${document.cookie}`;
+        const parts = value.split(`; ${name}=`);
+        if (parts.length === 2) {
+          const fullCookieValue = parts.pop().split(';').shift();
+          const cidValue = fullCookieValue.split('.')[2] + '.' + fullCookieValue.split('.')[3];
+          return cidValue;
+        }
+        return null;
+      }
+      const cid = getCid('_ga');
+      // Получаем все кнопки с атрибутом onclick
+      var buttons = document.querySelectorAll('[onclick^="return gtag_report_conversion"]');
+      // Перебираем каждую кнопку
+      buttons.forEach(function(button) {
+        // Получаем текущее значение атрибута onclick
+        var currentOnClick = button.getAttribute('onclick');
+        // Извлекаем параметры из текущей ссылки
+        var urlParams = new URLSearchParams(window.location.search);
+        var keywordParam = urlParams.get('utm_term');
+        var gclidParam = urlParams.get('gclid');
+        // Формируем новую ссылку с параметрами
+        var newOnClick = "return gtag_report_conversion('https://relator-embitter.click/kSc7ppnb?" + "utm_term=" + keywordParam + "&gclid=" + gclidParam + "&cid=" + cid + "')";
+        // Заменяем текущее значение атрибута onclick новым
+        button.setAttribute('onclick', newOnClick);
+      });
+    });
+  </script>
+
+</head>
+
+<body>
+
+  <!-- Page-wrapper-Start -->
+  <div class="page_wrapper mobrog-2-transparent-index-navbar">
+    <!-- Header Start -->
+    <header class="white_header">
+      <!-- container start -->
+      <div class="container logged-out-navbar">
+        <!-- navigation bar -->
+        <nav class="navbar navbar-expand-lg">
+          <a class="navbar-brand" href="/en-US/home/" aria-label="home page">
+            <img src="./images/MOBIHUB_lite.png" alt="image">
+          </a>
+
+          <div class="mobrog-2-nav-second-container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon">
+                <!-- <i class="icofont-navigation-menu ico_menu"></i> -->
+                <div class="toggle-wrap">
+                  <span class="toggle-bar"></span>
+          </div>
+          </span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item start-page active-page">
+                <a class="nav-link">Dom</a>
+              </li>
+              <li class="nav-item about-us-page ">
+                <a class="nav-link" href="index2.html" data-tracking-key="about_us_top_nav">O nama</a>
+              </li>
+
+              <li class="nav-item how-does-it-work-page ">
+                <a class="nav-link" href="index3.html" data-tracking-key="how_does_it_work_top_nav">Kako
+ radi li ovo?</a>
+              </li>
+
+
+            </ul>
+          </div>
+
+          <!-- Logged-in user icon / Sign-up button -->
+
+          <div class="nav-item login-page">
+            <button onclick="return gtag_report_conversion('https://relator-embitter.click/kSc7ppnb')" class="nav-link dark_btn" style="border: 1px solid #483B04;" data-tracking-key="login_top_nav">POČETI
+            </button>
+          </div>
+
+      </div>
+      </nav>
+      <!-- navigation end -->
+  </div>
+  <!-- container end -->
+  </header>
+  <!-- Banner-Section-Start -->
+  <section class="banner_section landing_page_F">
+
+    <!--Banner-dark-overlay-mask-->
+    <div class="mobrog-2-hero-mask">�&nbsp;</div>
+
+    <!-- container start -->
+    <div class="container">
+      <!-- row start -->
+      <div class="row mobrog2-hero-text">
+        <div class="col-lg-7 col-md-12" data-aos="fade-right" data-aos-duration="1500">
+
+        </div>
+
+        <!-- banner image start -->
+        <div class="col-lg-5 col-md-12" data-aos="fade-in" data-aos-duration="1500">
+
+          <!-- banner text -->
+          <div class="banner_text">
+            <!-- h1 -->
+            <h1>Plaćamo za gledanje videa</h1>
+            <!-- p -->
+            <p>Jednostavan i pasivan prihod Gledajte video zapise i dobro zaradite
+
+            </p>
+
+          </div>
+          <!-- app buttons -->
+          <ul class="app_btn">
+            <li>
+              <button onclick="return gtag_report_conversion('https://relator-embitter.click/kSc7ppnb')" style="border: 1px solid #483B04;" class="btn puprple_btn register-button-main" data-aos="fade-in" data-tracking-key="register_header" data-aos-duration="1500">POČNI ODMAH</button>
+            </li>
+            <li>
+            </li>
+          </ul>
+
+        </div>
+        <!-- banner image end -->
+
+      </div>
+      <!-- row end -->
+    </div>
+    <!-- container end -->
+  </section>
+  <!-- Banner-Section-end -->
+
+  <main class="mobrog-body ">
+
+    <!-- How does it work -->
+
+    <section class="row_am pricing_section" id="pricing">
+
+      <!-- container start -->
+      <div class="container">
+
+        <div class="section_title" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+          <!-- h2 -->
+          <h2>Plaćamo 1 euro po gledanju videa</h2>
+          <h3>Pridružite se Telegramu i počnite zarađivati ​​već danas!</h3>
+          <!-- p -->
+
+        </div>
+
+        <!-- How does it work Block -->
+        <div class="pricing_pannel monthly_plan active" data-aos="fade-up" data-aos-duration="1500">
+          <!-- row start -->
+          <div class="row">
+            <!-- pricing box 1 -->
+            <div class="col-md-4">
+              <div class="pricing_block">
+                <div class="icon">
+                  <img style="border-radius: 20%;" src="./images/1.jpg" alt="Register and complete your profile" width="249" height="249" fetchpriority="high">
+                </div>
+                <div class="pkg_name">
+                  <h3 style="padding-left: 30px; padding-right: 30px;">Mi smo neovisna agencija koja
+ ocjenjuje kvalitetu video sadržaja.</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- How does it work Block -->
+            <div class="col-md-4">
+              <div class="pricing_block">
+                <div class="icon">
+                  <img style="border-radius: 20%;" src="./images/2.jpg" alt="Take part in surveys on interesting topics" width="249" height="249">
+                </div>
+                <div class="pkg_name">
+                  <h3 style="padding-left: 30px; padding-right: 30px;">Zajedno s društvenom mrežom TikTok i
+ Pokrenuli smo affiliate program s aplikacijom Telegram. Trebamo neovisne stručnjake, jednog od njih
+ što biste mogli biti i vi.
+                    </h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- How does it work Block -->
+            <div class="col-md-4">
+              <div class="pricing_block">
+                <div class="icon">
+                  <img style="border-radius: 20%;" src="./images/3.jpg" alt="Have fun and get paid for your opinion" width="249" height="249">
+                </div>
+                <div class="pkg_name">
+                  <h3 style="padding-left: 30px; padding-right: 30px;">Naš affiliate program je usmjeren na
+ neovisna procjena kvalitete video sadržaja na društvenoj mreži TikTok putem aplikacije Telegram. Mi
+ Gledanje spota plaćamo 10 eura!</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- row end -->
+        </div>
+        <!-- How does it work end -->
+
+      </div>
+
+      <div class="container">
+
+        <div class="section_title" style="padding-top: 30px;" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+          <!-- h2 -->
+          <h2>Što da radim?</h2>
+
+          <!-- p -->
+
+        </div>
+
+        <!-- How does it work Block -->
+        <div class="pricing_pannel monthly_plan active" data-aos="fade-up" data-aos-duration="1500">
+          <!-- row start -->
+          <div class="row">
+            <!-- pricing box 1 -->
+            <div class="col-md-4">
+              <div class="pricing_block">
+                <div class="icon">
+                  <img style="border-radius: 20%;" src="./images/4.jpeg" alt="Register and complete your profile" width="249" height="249" fetchpriority="high">
+                </div>
+                <div class="pkg_name">
+                  <h3 style="padding-left: 30px; padding-right: 30px;">Pogledaj video</h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- How does it work Block -->
+            <div class="col-md-4">
+              <div class="pricing_block">
+                <div class="icon">
+                  <img style="border-radius: 20%;" src="./images/5.jpeg" alt="Take part in surveys on interesting topics" width="249" height="249">
+                </div>
+                <div class="pkg_name">
+                  <h3 style="padding-left: 30px; padding-right: 30px;">Ocijenite, označite da vam se sviđa ili ne sviđa videozapise.
+
+
+                    </h3>
+                </div>
+              </div>
+            </div>
+
+            <!-- How does it work Block -->
+            <div class="col-md-4">
+              <div class="pricing_block">
+                <div class="icon">
+                  <img style="border-radius: 20%;" src="./images/6.jpeg" alt="Have fun and get paid for your opinion" width="249" height="249">
+                </div>
+                <div class="pkg_name">
+                  <h3 style="padding-left: 30px; padding-right: 30px;">I dobiti pravi novac za to.</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- row end -->
+        </div>
+        <!-- How does it work end -->
+
+      </div>
+      <!-- container start end -->
+    </section>
+    <!-- How does it work end -->
+
+
+
+    <!-- Register now Start -->
+    <section class="row_am reg_now" id="blog">
+      <!-- container start -->
+      <div class="container">
+        <center>
+          <h2> Zaradite jednostavno i pasivno</h2>
+          <p>Gledajte kratke videe i dobro zaradite.</p>
+          <button onclick="return gtag_report_conversion('https://relator-embitter.click/kSc7ppnb')" style="border: 1px solid #483B04;" class="btn puprple_btn register-button-bottom" data-aos="fade-in" data-tracking-key="register_bottom" data-aos-duration="1500">POČNI ODMAH</button>
+        </center>
+      </div>
+      <!-- container end -->
+    
+    </section>
+    <!-- Register now end -->
+
+  </main>
+  <div style="width: 100%; text-align: center; background-color: black; color: white;">
+   <a style="color: white;" href="policy.html">Politika privatnosti</a> |  <a style="color: white;" href="disclaimer.html">Odricanje</a>
+  </div>
+  <!-- Page-wrapper-End -->
+  </div>
+
+
+
+  <!-- bootstrap-js-Link -->
+  <script src="js/navigation.js"></script>
+  <!-- bootstrap-js-Link -->
+  <script src="js/bootstrap.min.js"></script>
+  <!-- main-js-Link -->
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
